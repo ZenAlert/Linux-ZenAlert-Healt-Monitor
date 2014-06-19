@@ -9,6 +9,6 @@ Linux-Healt-Monitor
 
 ## Requirements
 
-.Linux System
-.cUrl 
-.ZenAlert free account
+.Linux System<br/>
+.cUrl <br/>
+.ZenAlert free account<br/>
