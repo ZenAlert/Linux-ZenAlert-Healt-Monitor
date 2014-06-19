@@ -26,7 +26,7 @@ function main_prog() {
 	  if [ $usep -ge $ALERT ] ; then
 	    eventDescription="Running+out+of+space+\"$partition+($usep%)\"+on+server+$(hostname).+Timestamp:+$(date +"%Y-%m-%d")+$(date +"%T")" 
 	    # send an Event Signal 
-	    curl "http://api.zenalert.com/signal?code=warning&thing_id="$THING_ID"&api_key="$API_KEY"&description="$eventDescription
+	    curl "https://api.zenalert.com/signal?code=warning&thing_id="$THING_ID"&api_key="$API_KEY"&description="$eventDescription
 	  fi
 	done
 }
@@ -38,4 +38,4 @@ else
 fi
 
 # send a Vital Signal 
-curl "http://api.zenalert.com/signal?code=alive&thing_id="$THING_ID"&api_key="$API_KEY
+curl "https://api.zenalert.com/signal?code=alive&thing_id="$THING_ID"&api_key="$API_KEY
