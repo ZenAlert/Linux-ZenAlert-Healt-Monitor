@@ -8,6 +8,21 @@ Linux-Healt-Monitor
 
 ## Requirements
 
-.Unix-like System<br/>
-.cUrl <br/>
-.ZenAlert free account<br/>
+* Unix-like System
+* cUrl 
+* ZenAlert free account
+
+## Installation
+
+* If you do not have curl on your system, you can start by installing it
+* Save the script on your disk
+* Make script executable: chmod +x healtmonitor.sh
+* Use crontab for execute the script every five minute
+
+	crontab -e
+    
+	and append this line at end of crontab configuration file:
+	
+	*/5 * * * * /mypath/healtmonitor.sh
+
+	save and exit
