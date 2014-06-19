@@ -19,10 +19,13 @@ Linux-Healt-Monitor
 * Make script executable: chmod +x healtmonitor.sh
 * Use crontab for execute the script every five minute
 
+edit crontab configuration file:
+
 	crontab -e
     
-	and append this line at end of crontab configuration file:
+
+and append this line at end of crontab configuration file:
 	
 	*/5 * * * * /mypath/healtmonitor.sh
-
-	save and exit
+	
+save and exit
