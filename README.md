@@ -14,7 +14,12 @@ Linux-Healt-Monitor
 
 ## Installation
 
-* If you do not have curl on your system, you can start by installing it
+Start with installing curl:
+	
+	* apt-get install curl in debian/ubuntu
+	* yum install curl in redhat/centos)
+
+
 * Save the script on your disk
 * Make script executable: chmod +x healtmonitor.sh
 * Use crontab for execute the script every five minute
