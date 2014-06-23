@@ -20,7 +20,7 @@ Start with installing curl:
 	* yum install curl in redhat/centos)
 
 
-* Save the script on your disk
+* Save healtmonitor.sh on your disk
 * Make script executable: chmod +x healtmonitor.sh
 * Use crontab for execute the script every five minute
 
