@@ -16,8 +16,8 @@ Linux-Healt-Monitor
 
 Start with installing curl:
 	
-	* apt-get install curl in debian/ubuntu
-	* yum install curl in redhat/centos)
+	* sudo apt-get install curl (in debian/ubuntu)
+	* sudo yum install curl (in redhat/centos)
 
 
 * Save healtmonitor.sh on your disk
