@@ -24,7 +24,7 @@ function main_prog() {
 	  usep=$(echo $output | awk '{ print $1}' | cut -d'%' -f1)
 	  partition=$(echo $output | awk '{print $2}')
 	  if [ $usep -ge $ALERT ] ; then
-	    eventDescription="Running+out+of+space+\"$partition+($usep%)\"+on+server+$(hostname).+Timestamp:+$(date +"%Y-%m-%d")+$(date +"%T")" 
+	    eventDescription="Running+out+of+space+\"$partition+($usep%)\"+on+$(hostname).+Timestamp:+$(date +"%Y-%m-%d")+$(date +"%T")" 
 	    # send an Event Signal 
 	    curl "https://api.zenalert.com/signal?code=warning&thing_id="$THING_ID"&api_key="$API_KEY"&description="$eventDescription
 	  fi
